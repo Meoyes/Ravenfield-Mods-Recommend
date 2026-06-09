@@ -15,7 +15,7 @@ config:
         -
           theme: brand
           text: 开始浏览
-          link: /recommend/start
+          link: /r/start
         -
           theme: alt
           text: Github →
