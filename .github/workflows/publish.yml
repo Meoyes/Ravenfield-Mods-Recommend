@@ -34,5 +34,4 @@ jobs:
           wranglerVersion: '4.33.0'
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: deploy --assets=./docs/.vuepress/dist
-          name: ravenfield-mods-recommend
+          command: deploy --assets=./docs/.vuepress/dist --name=ravenfield-mods-recommend
