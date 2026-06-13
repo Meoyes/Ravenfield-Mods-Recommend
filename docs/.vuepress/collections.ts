@@ -71,12 +71,3 @@ const enrc = defineCollection({
   sidebar: 'auto',
 })
 
-/**
- * 导出所有的 collections
- *  (enBlog 为博客示例，如果不需要博客功能，请删除)
- *  (enDemoDoc 为参考示例，如果不需要它，请删除)
- */
-export const enCollections = defineCollections([
-  enrc,
-])
-

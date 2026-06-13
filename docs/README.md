@@ -18,6 +18,5 @@ config:
           link: /r/start
         -
           theme: alt
-          text: Github →
+          text: Github仓库 →
           link: https://github.com/Meoyes/Ravenfield-Mods-Recommend
----

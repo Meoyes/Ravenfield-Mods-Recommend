@@ -11,8 +11,3 @@ export const zhNavbar = defineNavbarConfig([
   { text: '模组推荐', link: '/r/start' }]
 )
 
-export const enNavbar = defineNavbarConfig([
-  { text: 'Home', link: '/en/' },
-  { text: 'Mods Recommend', link: '/en/r/start' },
-])
-

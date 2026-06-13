@@ -11,8 +11,8 @@
  */
 
 import { defineThemeConfig } from 'vuepress-theme-plume'
-import { enCollections, zhCollections } from './collections'
-import { enNavbar, zhNavbar } from './navbar'
+import { zhCollections } from './collections'
+import { zhNavbar } from './navbar'
 
 /**
  * @see https://theme-plume.vuejs.press/config/theme/
@@ -23,7 +23,7 @@ export default defineThemeConfig({
   appearance: true,  // 配置 深色模式
 
   social: [
-    { icon: 'github', link: '/' },
+    { icon: 'github', link: 'https://github.com/Meoyes/Ravenfield-Mods-Recommend' },
   ],
   // navbarSocialInclude: ['github'], // 允许显示在导航栏的 social 社交链接
   // aside: true, // 页内侧边栏， 默认显示在右侧
@@ -68,33 +68,6 @@ export default defineThemeConfig({
 
       navbar: zhNavbar,
       collections: zhCollections,
-
-      /**
-       * 公告板
-       * @see https://theme-plume.vuejs.press/guide/features/bulletin/
-       */
-       // bulletin: {
-       //   layout: 'top-right',
-       //   contentType: 'markdown',
-       //   title: '',
-       //   content: '',
-       // },
-    },
-    '/en/': {
-      /**
-       * @see https://theme-plume.vuejs.press/config/theme/#profile
-       */
-      profile: {
-        avatar: 'https://theme-plume.vuejs.press/plume.png',
-        name: 'Ravenfield Mods Recommend',
-        description: 'A website made by vuepress-theme-plume to recommend ravenfield mods',
-        // circle: true,
-        // location: '',
-        // organization: '',
-      },
-
-      navbar: enNavbar,
-      collections: enCollections,
 
       /**
        * 公告板

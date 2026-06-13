@@ -52,7 +52,8 @@ export default defineUserConfig({
     contributors: {
       mode: "block",
     },
-    // changelog: false,
+    changelog: true,
+    copyright: "CC-BY-SA-4.0",
 
     /**
      * 编译缓存，加快编译速度
@@ -154,17 +155,17 @@ export default defineUserConfig({
      * 评论 comments
      * @see https://theme-plume.vuejs.press/guide/features/comments/
      */
-    // comment: {
-    //   provider: '', // "Artalk" | "Giscus" | "Twikoo" | "Waline"
-    //   comment: true,
-    //   repo: '',
-    //   repoId: '',
-    //   category: '',
-    //   categoryId: '',
-    //   mapping: 'pathname',
-    //   reactionsEnabled: true,
-    //   inputPosition: 'top',
-    // },
+    comment: {
+      provider: 'Giscus', // "Artalk" | "Giscus" | "Twikoo" | "Waline"
+      comment: true,
+      repo: 'Meoyes/Ravenfield-Mods-Recommend',
+      repoId: 'R_kgDOS0MRyg',
+      category: 'Ideas',
+      categoryId: 'DIC_kwDOS0MRys4C_EDe',
+      mapping: 'pathname',
+      reactionsEnabled: true,
+      inputPosition: 'top',
+    },
 
     /**
      * 资源链接替换
@@ -189,6 +190,13 @@ export default defineUserConfig({
     plugins: {
       // 如果您在此处直接声明为 true，则表示开发环境和生产环境都启用该功能
       git: true,
+      photoSwipe: {
+        // 图片选择器
+        selector: '.vp-doc :not(a) > img:not([no-view],.no-view,.ignore)',
+        download: true, // 是否显示下载按钮
+        fullscreen: true, // 是否显示全屏按钮
+        scrollToClose: true, // 是否在滚动时关闭当前图片
+      }
     }
   }),
   
